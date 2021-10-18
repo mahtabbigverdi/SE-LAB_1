@@ -1,4 +1,7 @@
+
+from SVM import *
 from Ensembles import *
+
 if __name__ == '__main__':
     x_train, y_train, x_test, y_test = None, None, None,None
     print('Welcome to BreastCancerClassifier application! Please choose your desired model category and enter a number:'
@@ -6,7 +9,7 @@ if __name__ == '__main__':
           '\n2-EnsembleModels and DecisionTrees'
           '\n3-SVM')
     cat = int(input())
-
+    
     if cat == 2:
         clf = EnsembleAndDTClassifiers(x_train, y_train, x_test, y_test)
         print('choose among available ensemble models below:')
@@ -24,5 +27,11 @@ if __name__ == '__main__':
             test_acc = clf.adaboost(n_estimators = n_estimators)
         if num == 3:
             tets_acc = clf.decision_tree()
+    if cat == 3:
+        clf = Svm(x_train, y_train, x_test, y_test)
+        print('input kernel: ')
+        kernel = input()
+        test_acc = clf.svm_classifier(kernel=kernel)
+
 
 
