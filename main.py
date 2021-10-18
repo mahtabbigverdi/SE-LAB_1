@@ -11,10 +11,14 @@ if __name__ == '__main__':
         clf = EnsembleAndDTClassifiers(x_train, y_train, x_test, y_test)
         print('choose among available ensemble models below:')
         print('1. Random Forest')
+        print('2. AdaBoost')
         num = int(input())
         if num == 1:
-            print('input numer of estimators:')
+            print('input number of estimators:')
             n_estimators = int(input())
-            tets_acc = clf.random_forest(n_estimators = n_estimators)
-
+            test_acc = clf.random_forest(n_estimators = n_estimators)
+        if num == 2:
+            print('input number of estimators:')
+            n_estimators = int(input())
+            test_acc = clf.adaboost(n_estimators = n_estimators)
 
