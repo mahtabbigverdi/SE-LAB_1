@@ -62,3 +62,4 @@ if __name__ == '__main__':
 
     print('Test accuracy is ', str(test_acc))
     print('hello to everyone')
+    print('bye')
