@@ -61,3 +61,4 @@ if __name__ == '__main__':
         test_acc = clf.svm_classifier(kernel=kernel)
 
     print('Test accuracy is ', str(test_acc))
+    print('hello to everyone')
