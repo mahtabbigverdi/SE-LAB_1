@@ -22,3 +22,6 @@ class LinearClassifiers():
         return accuracy_score(self.y_test, pred)
 
 
+
+
+
