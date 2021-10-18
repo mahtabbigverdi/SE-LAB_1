@@ -17,6 +17,10 @@ class EnsembleAndDTClassifiers():
 
 
 
+    def adaboost(self,):
+        pass
+
+
 
 
 
